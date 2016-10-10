@@ -1,0 +1,29 @@
+.wrapper-footer
+    justify-content: space-between
+    padding: 1% 0
+    
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .wrapper-footer
+        padding: 1.5% 0 1% 0
+   
+ 
+//small
+@include respond-to($small)
+    .wrapper-footer
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    
+
+//extra-small
+@include respond-to($extra-small)
+    .wrapper-footer
+        padding: 5% 0
+    
+
+//mob
+@include respond-to($mob)

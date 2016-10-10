@@ -13,6 +13,7 @@
   <link rel="shortcut icon" href="favicon.png">
   <!-- build:css css/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
   <!-- endbower -->
   <!-- endbuild-->
   <link rel="stylesheet" href="css/style.css">
@@ -20,13 +21,13 @@
 <body>
   <header class="site-header">
     <div class="wrapper wrapper-site-header"><a class="logo-header" href="index.html">
-        <svg class="logo">
+        <svg class="logo icon-logo">
           <use xlink:href="#logo"></use>
         </svg></a>
       <nav class="navbar">
         <div class="navbar-item-mob">
-          <svg class="navicon">
-            <use xlink:href="#navicon"></use>
+          <svg class="burger icon-nav">
+            <use xlink:href="#burger"></use>
           </svg>
           <p class="navicon-text">MENU</p>
         </div><a class="navbar-item" href="index.html">WHAT WE DO</a><a class="navbar-item" href="our-work.html">OUR WORK</a><a class="navbar-item" href="clients.html">CLIENTS</a><a class="navbar-item" href="team.html">TEAM</a><a class="navbar-item" href="offices.html">OFFICES</a><a class="navbar-item" href="experimantes.html">EXPERIMANTES</a>
@@ -39,8 +40,25 @@
       <p class="index-main-text">repeat predefined chunks as necassary making first true generator</p>
     </div>
   </section>
+  <footer class="site-footer">
+    <div class="wrapper wrapper-footer">
+      <p class="copyright">COOPYRIGHT &copy;2013 VISUAL BOX, ALL RESERVED</p>
+      <div class="social-footer">
+        <svg class="twitter icon-footer">
+          <use xlink:href="#twitter"></use>
+        </svg>
+        <svg class="fb icon-footer">
+          <use xlink:href="#fb"></use>
+        </svg>
+        <svg class="skype icon-footer">
+          <use xlink:href="#skype"></use>
+        </svg>
+      </div>
+    </div>
+  </footer>
   <!-- build:js js/vendor.js -->
   <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
   <!-- endbower -->
   <!-- endbuild-->
   <script src="js/common.js" async></script>

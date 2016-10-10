@@ -1,0 +1,42 @@
+.copyright
+    color: $copiryght
+
+.social-footer
+    @extend %col-2
+    text-align: right
+
+.icon-footer
+    width: 25px
+    height: 25px
+    margin-right: 7.5%
+    fill: $icon-footer-clr
+    
+    
+//RESPOND-TO
+
+//small
+@include respond-to($small)
+    .social-footer
+        @include mq-col(4)
+        text-align: center
+    
+    .icon-footer
+        margin: 20px 10% 0 0
+    
+
+//extra-small
+@include respond-to($extra-small)
+    .social-footer
+        @include mq-col(6)
+    
+//mob
+@include respond-to($mob)
+    .copyright
+        font-size: $footer-text-sz
+        text-align: center
+        
+    .social-footer
+        @include mq-col(6)
+    
+    .icon-footer
+        margin: 30px 15% 0 0

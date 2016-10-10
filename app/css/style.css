@@ -29,11 +29,11 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Configs
 ------------------------------------------------*/
-.logo-header, .navbar-item-mob, .navbar {
+.social-footer, .logo-header, .navbar-item-mob, .navbar {
   margin-right: 0.52083%;
   margin-left: 0.52083%; }
 
-.logo-header, .navbar-item-mob, .navbar {
+.social-footer, .logo-header, .navbar-item-mob, .navbar {
   padding-right: 0;
   padding-left: 0; }
 
@@ -54,6 +54,10 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Columns
 ------------------------------------------------*/
+.social-footer {
+  width: 15.62501%;
+  box-sizing: border-box; }
+
 .logo-header {
   width: 23.95834%;
   box-sizing: border-box; }
@@ -111,8 +115,37 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   padding: 15% 0 25% 0;
   text-align: center; }
 
+@media only screen and (max-width: 767px) {
+  .wrapper-index-main {
+    padding: 25% 0 45% 0; } }
+
+.site-footer {
+  background: black; }
+
+.wrapper-footer {
+  justify-content: space-between;
+  padding: 1% 0; }
+
+@media only screen and (max-width: 991px) {
+  .wrapper-footer {
+    padding: 1.5% 0 1% 0; } }
+
+@media only screen and (max-width: 767px) {
+  .wrapper-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media only screen and (max-width: 479px) {
+  .wrapper-footer {
+    padding: 5% 0; } }
+
 .logo {
   height: 30px; }
+
+.burger {
+  width: 25px;
+  height: 25px; }
 
 @media only screen and (max-width: 767px) {
   .logo-header {
@@ -135,7 +168,7 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   padding: 2.5% 0;
   cursor: pointer; }
 
-.navicon {
+.icon-nav {
   width: 25px;
   height: 25px;
   vertical-align: middle; }
@@ -177,7 +210,7 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
     padding: 7.5% 2.5%; }
   .navbar-item-mob {
     width: 48.95834%; }
-  .navicon {
+  .icon-nav {
     width: 30px;
     height: 30px; } }
 
@@ -186,7 +219,7 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
     width: 65.62501%; }
   .navbar-item {
     width: 100%; }
-  .navicon {
+  .icon-nav {
     height: 40px; } }
 
 .index-main-title {
@@ -207,6 +240,38 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .index-main-text {
     width: 82.29167%;
     margin-top: 20px; } }
+
+.copyright {
+  color: #7c7c7c; }
+
+.social-footer {
+  text-align: right; }
+
+.icon-footer {
+  width: 25px;
+  height: 25px;
+  margin-right: 7.5%;
+  fill: #7c7c7c; }
+
+@media only screen and (max-width: 767px) {
+  .social-footer {
+    width: 32.29167%;
+    text-align: center; }
+  .icon-footer {
+    margin: 20px 10% 0 0; } }
+
+@media only screen and (max-width: 479px) {
+  .social-footer {
+    width: 48.95834%; } }
+
+@media only screen and (max-width: 319px) {
+  .copyright {
+    font-size: 0.9em;
+    text-align: center; }
+  .social-footer {
+    width: 48.95834%; }
+  .icon-footer {
+    margin: 30px 15% 0 0; } }
 
 .visible {
   display: block; }
