@@ -222,6 +222,44 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .icon-nav {
     height: 40px; } }
 
+.menu-icon {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  text-align: center; }
+
+.menu-icon-item {
+  margin-top: 2px;
+  padding: 15% 10%;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s ease-out; }
+  .menu-icon-item:hover {
+    color: white;
+    background: #ed1616; }
+
+.menu-icon-img {
+  width: 25px;
+  height: 25px; }
+
+.menu-icon-img {
+  fill: #ffffff; }
+
+@media only screen and (max-width: 991px) {
+  .menu-icon {
+    width: 57.29167%;
+    top: 20%;
+    left: 2.5%; }
+  .menu-icon-item {
+    width: 15.62501%;
+    display: inline-block;
+    margin-top: 0;
+    padding: 2.5% 0; } }
+
+@media only screen and (max-width: 767px) {
+  .menu-icon {
+    display: none; } }
+
 .index-main-title {
   font-size: 3.5em;
   font-weight: normal; }
@@ -272,6 +310,23 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
     width: 48.95834%; }
   .icon-footer {
     margin: 30px 15% 0 0; } }
+
+.menu-footer {
+  position: static;
+  display: none; }
+
+.menu-footer-item {
+  margin: 10px 5px 20px 0; }
+
+@media only screen and (max-width: 767px) {
+  .menu-footer {
+    display: block;
+    width: 98.95834%; } }
+
+@media only screen and (max-width: 479px) {
+  .menu-footer-item {
+    width: 40.62501%;
+    padding: 5% 0; } }
 
 .visible {
   display: block; }

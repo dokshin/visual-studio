@@ -1,0 +1,25 @@
+.menu-footer
+    position: static
+    display: none
+
+.menu-footer-item
+    margin: 10px 5px 20px 0
+    
+    
+//RESPOND-TO
+ 
+
+//small
+@include respond-to($small)
+   .menu-footer
+        display: block
+        @include mq-col(12)
+    
+
+//extra-small
+@include respond-to($extra-small)
+            
+    .menu-footer-item
+        @include mq-col(5)
+        padding: 5% 0
+      

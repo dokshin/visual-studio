@@ -1,8 +1,9 @@
 footer.site-footer
     .wrapper.wrapper-footer
+        include ../blocks/_menu-footer
         p.copyright.
             COOPYRIGHT &copy;2013 VISUAL BOX, ALL RESERVED
         .social-footer
-            +icon('twitter', 'icon-footer')
-            +icon('fb', 'icon-footer')
-            +icon('skype', 'icon-footer')
+            a.social-link(href="#"): +icon('twitter', 'icon-footer')
+            a.social-link(href="#"): +icon('fb', 'icon-footer')
+            a.social-link(href="#"): +icon('skype', 'icon-footer')
