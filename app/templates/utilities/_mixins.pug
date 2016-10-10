@@ -1,0 +1,15 @@
+//- NAV
+
+mixin nav(items)
+    nav.navbar
+        .navbar-item-mob
+            +icon('navicon')
+            p.navicon-text= "MENU"
+        each item, i in items
+            a.navbar-item(href=item.href)= item.name
+            
+
+//- SPRITE
+mixin icon(name)
+    svg(class=name)
+        use(xlink:href="#" + name)

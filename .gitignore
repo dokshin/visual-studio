@@ -1,0 +1,14 @@
+#Рабочая версия сайта
+dist/
+
+#devDependencies
+node_module/
+
+#Dependencies
+bower_components/
+
+#Файлы конфигурации
+*bower.json
+*.bowerrc
+*gulpfile.js
+*package.json

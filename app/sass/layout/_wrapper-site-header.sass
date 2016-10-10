@@ -1,0 +1,22 @@
+.wrapper-site-header
+    justify-content: space-between
+    align-items: center
+    
+    
+//RESPOND-TO 
+//small
+@include respond-to($small)
+    .wrapper-site-header
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 1% 0
+    
+
+//extra-small
+@include respond-to($extra-small)
+    
+    
+
+//mob
+@include respond-to($mob)

@@ -1,0 +1,95 @@
+.navbar
+    @extend %col-8
+
+    &-item
+        display: inline-block
+        margin-bottom: -3px
+        padding: 4%
+        color: $navbar-text-clr
+        border-bottom: 3px solid transparent
+        
+        &:hover
+            color: $navbar-text-hv-clr
+            background: $navbar-item-clr
+            border-bottom: 3px solid $navbar-border-clr
+
+.navbar-item-mob
+    display: none
+    @extend %col-4
+    padding: 2.5% 0
+    cursor: pointer
+        
+.navicon
+    width: 25px
+    height: 25px
+    vertical-align: middle
+    
+.navicon-text
+    display: inline-block
+    color: white
+    
+        
+//RESPOND-TO
+
+//large
+@include respond-to($large)
+    .navbar
+        @include mq-col(7)
+        @include mq-offset(1)
+            
+    .navbar-item
+        padding: 5% 2%
+
+
+//medium
+@include respond-to($medium)
+    .navbar
+        @include mq-col(6)
+        @include mq-offset(0)
+            
+    .navbar-item
+        width: 25%
+        margin: 0.5%
+        padding: 5% 2.5%
+        text-align: center
+        
+    
+//small
+@include respond-to($small)
+    .navbar
+        text-align: center
+        
+    .navbar-item
+        display: none
+        width: 95%
+        color: $navbar-text-hv-clr
+        border-bottom: 3px solid $navbar-border-clr
+        
+    .navbar-item-mob
+        display: inline-block
+        
+    
+
+//extra-small
+@include respond-to($extra-small)
+    .navbar-item
+        padding: 7.5% 2.5%
+    
+    .navbar-item-mob
+        @include mq-col(6)
+            
+    .navicon
+        width: 30px
+        height: 30px
+    
+
+//mob
+@include respond-to($mob)
+    .navbar
+        @include mq-col(8)
+    
+    .navbar-item
+         width: 100%
+    
+    .navicon
+        height: 40px
