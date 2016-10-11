@@ -14,14 +14,20 @@
     
 //RESPOND-TO
 
-//small
-@include respond-to($small)
+//medium
+@include respond-to($medium)
+    .copyright
+        margin: 20px 0
+    
     .social-footer
         @include mq-col(4)
         text-align: center
-    
+  
+        
+//small
+@include respond-to($small)
     .icon-footer
-        margin: 20px 10% 0 0
+        margin: 0 10% 0 0
     
 
 //extra-small
@@ -29,14 +35,14 @@
     .social-footer
         @include mq-col(6)
     
+            
 //mob
 @include respond-to($mob)
     .copyright
-        font-size: $footer-text-sz
-        text-align: center
+        font-size: $footer-text-sm-sz
         
     .social-footer
-        @include mq-col(6)
+        @include mq-col(12)
     
     .icon-footer
-        margin: 30px 15% 0 0
+        margin: 0 10%

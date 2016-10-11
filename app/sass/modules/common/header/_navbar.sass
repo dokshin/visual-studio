@@ -1,5 +1,6 @@
 .navbar
     @extend %col-8
+    z-index: 100
 
     &-item
         display: inline-block
@@ -18,11 +19,15 @@
     @extend %col-4
     padding: 2.5% 0
     cursor: pointer
+    
+    &:hover .icon-nav
+        fill: $icon-nav-hv
         
 .icon-nav
     width: 25px
     height: 25px
     vertical-align: middle
+    fill: $icon-nav-default
     
 .navicon-text
     display: inline-block

@@ -4,9 +4,21 @@
   padding: 0;
   font-family: "Roboto Condensed", sans-serif; }
 
+html,
+body {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between; }
+
 a {
   text-decoration: none;
   color: black; }
+
+img {
+  width: 100%; }
 
 button {
   background: none;
@@ -76,6 +88,14 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 ------------------------------------------------*/
 /* Flex Itens
 ------------------------------------------------*/
+.site-header {
+  width: 100%;
+  background: black; }
+
+.site-footer {
+  width: 100%;
+  background: black; }
+
 .wrapper {
   margin: 0 auto; }
 
@@ -91,9 +111,6 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .wrapper {
     max-width: 700px; } }
 
-.site-header {
-  background: black; }
-
 .wrapper-site-header {
   justify-content: space-between;
   align-items: center; }
@@ -103,9 +120,10 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1% 0; } }
+    padding: 2% 0; } }
 
 .index-main {
+  width: 100%;
   background: url(../img/index-bg.jpg);
   background-size: cover; }
 
@@ -119,59 +137,58 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .wrapper-index-main {
     padding: 25% 0 45% 0; } }
 
-.site-footer {
-  background: black; }
-
 .wrapper-footer {
   justify-content: space-between;
   padding: 1% 0; }
 
 @media only screen and (max-width: 991px) {
   .wrapper-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1.5% 0 1% 0; } }
 
 @media only screen and (max-width: 767px) {
   .wrapper-footer {
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+    padding: 5% 0; } }
 
 @media only screen and (max-width: 479px) {
   .wrapper-footer {
     padding: 5% 0; } }
-
-.logo {
-  height: 30px; }
-
-.burger {
-  width: 25px;
-  height: 25px; }
 
 @media only screen and (max-width: 767px) {
   .logo-header {
     width: 98.95834%;
     text-align: center; } }
 
-.navbar-item {
-  display: inline-block;
-  margin-bottom: -3px;
-  padding: 4%;
-  color: #b8b8b8;
-  border-bottom: 3px solid transparent; }
-  .navbar-item:hover {
-    color: white;
-    background: #0c0c0c;
-    border-bottom: 3px solid #ed1616; }
+.navbar {
+  z-index: 100; }
+  .navbar-item {
+    display: inline-block;
+    margin-bottom: -3px;
+    padding: 4%;
+    color: #b8b8b8;
+    border-bottom: 3px solid transparent; }
+    .navbar-item:hover {
+      color: white;
+      background: #0c0c0c;
+      border-bottom: 3px solid #ed1616; }
 
 .navbar-item-mob {
   display: none;
   padding: 2.5% 0;
   cursor: pointer; }
+  .navbar-item-mob:hover .icon-nav {
+    fill: red; }
 
 .icon-nav {
   width: 25px;
   height: 25px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  fill: white; }
 
 .navicon-text {
   display: inline-block;
@@ -222,42 +239,101 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .icon-nav {
     height: 40px; } }
 
-.menu-icon {
+.copyright {
+  color: #7c7c7c; }
+
+.social-footer {
+  text-align: right; }
+
+.icon-footer {
+  width: 25px;
+  height: 25px;
+  margin-right: 7.5%;
+  fill: #7c7c7c; }
+
+@media only screen and (max-width: 991px) {
+  .copyright {
+    margin: 20px 0; }
+  .social-footer {
+    width: 32.29167%;
+    text-align: center; } }
+
+@media only screen and (max-width: 767px) {
+  .icon-footer {
+    margin: 0 10% 0 0; } }
+
+@media only screen and (max-width: 479px) {
+  .social-footer {
+    width: 48.95834%; } }
+
+@media only screen and (max-width: 319px) {
+  .copyright {
+    font-size: 0.9em; }
+  .social-footer {
+    width: 98.95834%; }
+  .icon-footer {
+    margin: 0 10%; } }
+
+.menu-footer {
+  position: static;
+  display: none; }
+
+.menu-footer-item {
+  margin: 10px 5px 20px 0; }
+
+@media only screen and (max-width: 991px) {
+  .menu-footer {
+    width: 32.29167%;
+    display: block; }
+  .menu-footer-item {
+    width: 40.62501%;
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    padding: 5% 0; } }
+
+@media only screen and (max-width: 767px) {
+  .menu-footer {
+    width: 48.95834%; } }
+
+@media only screen and (max-width: 479px) {
+  .menu-footer {
+    width: 82.29167%; }
+  .menu-footer-item {
+    width: 48.95834%; } }
+
+.logo {
+  height: 30px; }
+
+.burger {
+  width: 25px;
+  height: 25px; }
+
+.menu-main {
   position: absolute;
   top: 25%;
   right: 0;
-  text-align: center; }
+  text-align: center;
+  z-index: 100; }
 
-.menu-icon-item {
+.menu-main-item {
   margin-top: 2px;
   padding: 15% 10%;
   background: white;
   cursor: pointer;
   transition: 0.3s ease-out; }
-  .menu-icon-item:hover {
+  .menu-main-item:hover {
     color: white;
     background: #ed1616; }
 
-.menu-icon-img {
+.menu-main-img {
   width: 25px;
   height: 25px; }
 
-.menu-icon-img {
+.menu-main-img {
   fill: #ffffff; }
 
 @media only screen and (max-width: 991px) {
-  .menu-icon {
-    width: 57.29167%;
-    top: 20%;
-    left: 2.5%; }
-  .menu-icon-item {
-    width: 15.62501%;
-    display: inline-block;
-    margin-top: 0;
-    padding: 2.5% 0; } }
-
-@media only screen and (max-width: 767px) {
-  .menu-icon {
+  .menu-main {
     display: none; } }
 
 .index-main-title {
@@ -278,55 +354,6 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .index-main-text {
     width: 82.29167%;
     margin-top: 20px; } }
-
-.copyright {
-  color: #7c7c7c; }
-
-.social-footer {
-  text-align: right; }
-
-.icon-footer {
-  width: 25px;
-  height: 25px;
-  margin-right: 7.5%;
-  fill: #7c7c7c; }
-
-@media only screen and (max-width: 767px) {
-  .social-footer {
-    width: 32.29167%;
-    text-align: center; }
-  .icon-footer {
-    margin: 20px 10% 0 0; } }
-
-@media only screen and (max-width: 479px) {
-  .social-footer {
-    width: 48.95834%; } }
-
-@media only screen and (max-width: 319px) {
-  .copyright {
-    font-size: 0.9em;
-    text-align: center; }
-  .social-footer {
-    width: 48.95834%; }
-  .icon-footer {
-    margin: 30px 15% 0 0; } }
-
-.menu-footer {
-  position: static;
-  display: none; }
-
-.menu-footer-item {
-  margin: 10px 5px 20px 0; }
-
-@media only screen and (max-width: 767px) {
-  .menu-footer {
-    display: block;
-    width: 98.95834%; } }
-
-@media only screen and (max-width: 479px) {
-  .menu-footer-item {
-    width: 40.62501%;
-    padding: 5% 0; } }
 
 .visible {
   display: block; }

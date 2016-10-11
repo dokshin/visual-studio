@@ -1,0 +1,51 @@
+.office-item
+    @extend %col-4
+    flex-grow: 1
+    position: relative
+    margin: 0
+    padding: 0
+    border: 1px solid white
+    cursor: pointer
+    
+    &:hover .office-text
+        background: $offices-text-bg-hv
+    
+.office-img
+    width: 100%
+    height: 101%
+    
+.office-text
+    position: absolute
+    bottom: -1%
+    width: 100%
+    padding: 2.5% 0
+    font-size: $offices-text-sz
+    text-align: center
+    color: $offices-text-clr
+    opacity: 0.8
+    background: $offices-text-bg
+    transition: 0.5s all
+    
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .office-item
+        @include mq-col(6)
+        
+    .office-img
+        height: 100%
+   
+ 
+//small
+@include respond-to($small)
+    .office-item
+        @include mq-col(8)
+        border: none
+    
+
+//extra-small
+@include respond-to($extra-small)
+    .office-text
+        font-size: $office-text-ex-sml-sz    

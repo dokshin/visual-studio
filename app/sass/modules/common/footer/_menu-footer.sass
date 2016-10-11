@@ -1,0 +1,36 @@
+.menu-footer
+    position: static
+    display: none
+
+.menu-footer-item
+    margin: 10px 5px 20px 0
+    
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .menu-footer
+        @include mq-col(4)
+        display: block
+    
+    .menu-footer-item
+        @include mq-col(5)
+        display: inline-block
+        margin: 5px 5px 5px 0
+        padding: 5% 0
+        
+
+//small
+@include respond-to($small)
+    .menu-footer
+        @include mq-col(6)
+    
+        
+//extra-small
+@include respond-to($extra-small)  
+    .menu-footer
+        @include mq-col(10)
+    
+    .menu-footer-item
+        @include mq-col(6)  

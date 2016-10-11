@@ -1,8 +1,4 @@
 doctype html
-//[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]
-//[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]
-//[if IE 8]><html lang="ru" class="lt-ie9"><![endif]
-//[if gt IE 8]><! 
 
 block vars
 
@@ -10,19 +6,18 @@ block mixins
     include ../utilities/_mixins 
 
 html(lang=lang)
-//<![endif]
 
-head
-    include ../partials/_head
-        
-body
-    block header
-    block main
-    block footer
-    block script
-        // build:js js/vendor.js 
-        // bower:js 
-        // endbower 
-        // endbuild
-        script(src='js/common.js' async)
-        script(src='js/sprite.js' async)
+    head
+        include ../partials/_head
+
+    body
+        block header
+        block main
+        block footer
+        block script
+            // build:js js/vendor.js 
+            // bower:js 
+            // endbower 
+            // endbuild
+            script(src='js/common.js' async)
+            script(src='js/sprite.js' async)
