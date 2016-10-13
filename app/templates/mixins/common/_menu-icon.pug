@@ -1,0 +1,21 @@
+mixin menu-icon(menuName)
+    div(class='menu-' + menuName)
+        div(class='menu-' + menuName + '-item')
+            +icon('location', 'menu-' + menuName + '-img')
+            p(class='menu-' + menuName + '-title').
+                Location
+
+        div(class='menu-' + menuName + '-item')
+            +icon('new', 'menu-' + menuName + '-img')
+            p(class='menu-' + menuName + '-title').
+                what's new
+
+        div(class='menu-' + menuName + '-item')
+            +icon('partners', 'menu-' + menuName + '-img')
+            p(class='menu-' + menuName + '-title').
+                Partners
+
+        div(class='menu-' + menuName + '-item')
+            +icon('milavo', 'menu-' + menuName + '-img')
+            p(class='menu-' + menuName + '-title').
+                Milavo

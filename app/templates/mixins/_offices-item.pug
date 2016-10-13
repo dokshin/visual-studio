@@ -1,0 +1,5 @@
+mixin offices-item(items)
+    each item, i in items
+        .offices-item
+            img.offices-img(alt="offices" src=item.link)
+            p.offices-text=item.text

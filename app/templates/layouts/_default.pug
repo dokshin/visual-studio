@@ -3,21 +3,15 @@ doctype html
 block vars
 
 block mixins
-    include ../utilities/_mixins 
+    include ../mixins/mixins
 
 html(lang=lang)
 
-    head
+    block head
         include ../partials/_head
 
-    body
+    body(class=bodyName)
         block header
         block main
         block footer
-        block script
-            // build:js js/vendor.js 
-            // bower:js 
-            // endbower 
-            // endbuild
-            script(src='js/common.js' async)
-            script(src='js/sprite.js' async)
+        include ../partials/_script

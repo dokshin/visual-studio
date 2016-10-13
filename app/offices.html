@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+  <head>  
     <meta charset="utf-8">
     <title>Visual Studio - Offices</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,141 +10,128 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
     <!-- endbower -->
-    <!-- endbuild-->
+    <!-- endbuild -->
+    <!-- build:css css/offices.css -->
     <link rel="stylesheet" href="css/offices.css">
+    <!-- endbuild -->
   </head>
-  <body>
+  <body class="offices">
     <header class="site-header">
-      <div class="wrapper wrapper-site-header"><a class="logo-header" href="/">
-          <svg class="logo icon-logo">
+      <div class="wrapper-site-header"><a class="logo-site-header" href="index.html">
+          <svg class="logo">
             <use xlink:href="#logo"></use>
           </svg></a>
         <nav class="navbar">
           <div class="navbar-item-mob">
-            <svg class="burger icon-nav">
+            <svg class="nav-icon">
               <use xlink:href="#burger"></use>
             </svg>
-            <p class="navicon-text">MENU</p>
+            <p class="nav-icon-text">MENU</p>
           </div><a class="navbar-item" href="index.html">WHAT WE DO</a><a class="navbar-item" href="our-work.html">OUR WORK</a><a class="navbar-item" href="clients.html">CLIENTS</a><a class="navbar-item" href="team.html">TEAM</a><a class="navbar-item" href="offices.html">OFFICES</a><a class="navbar-item" href="experimantes.html">EXPERIMANTES</a>
         </nav>
       </div>
     </header>
-    <div class="menu-main">
-      <div class="menu-main-item">
-        <svg class="location menu-main-img">
-          <use xlink:href="#location"></use>
-        </svg>
-        <p class="menu-main-title">
-          Location
-          
-        </p>
+    <main class="offices-main">
+      <div class="menu-main">
+        <div class="menu-main-item">
+          <svg class="menu-main-img">
+            <use xlink:href="#location"></use>
+          </svg>
+          <p class="menu-main-title">
+            Location
+            
+          </p>
+        </div>
+        <div class="menu-main-item">
+          <svg class="menu-main-img">
+            <use xlink:href="#new"></use>
+          </svg>
+          <p class="menu-main-title">
+            what's new
+            
+          </p>
+        </div>
+        <div class="menu-main-item">
+          <svg class="menu-main-img">
+            <use xlink:href="#partners"></use>
+          </svg>
+          <p class="menu-main-title">
+            Partners
+            
+          </p>
+        </div>
+        <div class="menu-main-item">
+          <svg class="menu-main-img">
+            <use xlink:href="#milavo"></use>
+          </svg>
+          <p class="menu-main-title">Milavo</p>
+        </div>
       </div>
-      <div class="menu-main-item">
-        <svg class="new menu-main-img">
-          <use xlink:href="#new"></use>
-        </svg>
-        <p class="menu-main-title">
-          what's new
-          
-        </p>
+      <div class="offices-item"><img class="offices-img" alt="offices" src="img/offices-office.jpg">
+        <p class="offices-text">offices</p>
       </div>
-      <div class="menu-main-item">
-        <svg class="partners menu-main-img">
-          <use xlink:href="#partners"></use>
-        </svg>
-        <p class="menu-main-title">
-          Partners
-          
-        </p>
+      <div class="offices-item"><img class="offices-img" alt="offices" src="img/offices-studio.jpg">
+        <p class="offices-text">studio</p>
       </div>
-      <div class="menu-main-item">
-        <svg class="milavo menu-main-img">
-          <use xlink:href="#milavo"></use>
-        </svg>
-        <p class="menu-main-title">Milavo</p>
+      <div class="offices-item"><img class="offices-img" alt="offices" src="img/offices-meeting-areas.jpg">
+        <p class="offices-text">meeting areas</p>
       </div>
-    </div>
-    <section class="offices-main">
-      <div class="office-item"><img class="office-img" alt="offices" src="img/offices-office.jpg">
-        <p class="office-text">
-          offices
-          
-        </p>
+      <div class="offices-item"><img class="offices-img" alt="offices" src="img/offices-guest-house.jpg">
+        <p class="offices-text">house</p>
       </div>
-      <div class="office-item"><img class="office-img" alt="offices-studio" src="img/offices-studio.jpg">
-        <p class="office-text">
-          studio
-          
-        </p>
+      <div class="offices-item"><img class="offices-img" alt="offices" src="img/offices-cafe.jpg">
+        <p class="offices-text">cafe</p>
       </div>
-      <div class="office-item"><img class="office-img" alt="offices-meeting-areas" src="img/offices-meeting-areas.jpg">
-        <p class="office-text">
-          meeting areas
-          
-        </p>
+      <div class="offices-item"><img class="offices-img" alt="offices" src="img/offices-explore.jpg">
+        <p class="offices-text">explore</p>
       </div>
-      <div class="office-item"><img class="office-img" alt="offices-guest-house" src="img/offices-guest-house.jpg">
-        <p class="office-text">
-          house
-          
-        </p>
-      </div>
-      <div class="office-item"><img class="office-img" alt="offices-cafe" src="img/offices-cafe.jpg">
-        <p class="office-text">
-          cafe
-          
-        </p>
-      </div>
-      <div class="office-item"><img class="office-img" alt="offices-explore" src="img/offices-explore.jpg">
-        <p class="office-text">explore</p>
-      </div>
-    </section>
+    </main>
     <footer class="site-footer">
-      <div class="wrapper wrapper-footer">
-        <div class="menu-main menu-footer">
-          <div class="menu-main-item menu-footer-item">
-            <svg class="location menu-main-img">
+      <div class="wrapper-footer">
+        <div class="menu-footer">
+          <div class="menu-footer-item">
+            <svg class="menu-footer-img">
               <use xlink:href="#location"></use>
             </svg>
-            <p class="menu-main-title">
+            <p class="menu-footer-title">
               Location
               
             </p>
           </div>
-          <div class="menu-main-item menu-footer-item">
-            <svg class="new menu-main-img">
+          <div class="menu-footer-item">
+            <svg class="menu-footer-img">
               <use xlink:href="#new"></use>
             </svg>
-            <p class="menu-main-title">
+            <p class="menu-footer-title">
               what's new
               
             </p>
           </div>
-          <div class="menu-main-item menu-footer-item">
-            <svg class="partners menu-main-img">
+          <div class="menu-footer-item">
+            <svg class="menu-footer-img">
               <use xlink:href="#partners"></use>
             </svg>
-            <p class="menu-main-title">
+            <p class="menu-footer-title">
               Partners
               
             </p>
           </div>
-          <div class="menu-main-item menu-footer-item">
-            <svg class="milavo menu-main-img">
+          <div class="menu-footer-item">
+            <svg class="menu-footer-img">
               <use xlink:href="#milavo"></use>
             </svg>
-            <p class="menu-main-title">Milavo</p>
+            <p class="menu-footer-title">Milavo</p>
           </div>
         </div>
         <p class="copyright">COOPYRIGHT &copy;2013 VISUAL BOX, ALL RESERVED</p>
-        <div class="social-footer"><a class="social-link" href="#">
-            <svg class="twitter icon-footer">
+        <div class="social-footer"><a class="social-footer-link" href="#">
+            <svg class="social-footer-icon">
               <use xlink:href="#twitter"></use>
-            </svg></a><a class="social-link" href="#">
-            <svg class="fb icon-footer">
+            </svg></a><a class="social-footer-link" href="#">
+            <svg class="social-footer-icon">
               <use xlink:href="#fb"></use>
-            </svg></a><a class="social-link" href="#">
-            <svg class="skype icon-footer">
+            </svg></a><a class="social-footer-link" href="#">
+            <svg class="social-footer-icon">
               <use xlink:href="#skype"></use>
             </svg></a></div>
       </div>
@@ -153,8 +140,9 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
-    <!-- endbuild-->
+    <!-- build:js js/main.js -->
     <script src="js/common.js" async></script>
     <script src="js/sprite.js" async></script>
+    <!-- endbuild-->
   </body>
 </html>

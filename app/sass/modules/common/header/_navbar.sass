@@ -23,13 +23,12 @@
     &:hover .icon-nav
         fill: $icon-nav-hv
         
-.icon-nav
-    width: 25px
-    height: 25px
+.nav-icon
+    @extend %burger
     vertical-align: middle
     fill: $icon-nav-default
     
-.navicon-text
+.nav-icon-text
     display: inline-block
     color: white
     
@@ -83,7 +82,7 @@
     .navbar-item-mob
         @include mq-col(6)
             
-    .icon-nav
+    .nav-icon
         width: 30px
         height: 30px
     
@@ -96,5 +95,5 @@
     .navbar-item
          width: 100%
     
-    .icon-nav
+    .nav-icon
         height: 40px

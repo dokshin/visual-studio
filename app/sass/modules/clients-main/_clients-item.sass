@@ -1,0 +1,64 @@
+.clients-item
+    @extend %col-4
+    flex-grow: 1
+    position: relative
+    margin: 0
+    
+.clients-foto
+    height: 100%
+
+.clients-info
+    position: absolute
+    right: 0
+    top: 0
+    width: 40%
+    padding: 2.5% 0
+    text-align: center
+    background: $clients-info-bg
+    z-index: 10
+    
+.clients-info-reverse
+    left: 0
+    
+.clients-info-title
+    font-size: $clients-info-title
+    
+.clients-info-profession
+    margin: 15px 0
+    
+.social-clients-icon
+    width: 25px
+    height: 25px
+    margin: 0 5%
+    fill: $social-clients-icon-clr
+    
+    &:hover
+        fill: $social-clients-icon-hv-clr
+    
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .clients-item
+        @include mq-col(12)
+        display: flex
+        flex-direction: column
+     
+
+//extra-small
+@include respond-to($extra-small)
+    .clients-info
+        position: static
+        width: 100%
+        padding: 0 0
+        
+    .social-clients-icon
+        width: 30px
+        height: 30px
+    
+
+//mob
+@include respond-to($mob)
+    .clients-info-profession
+        margin: 20px 0

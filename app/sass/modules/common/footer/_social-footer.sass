@@ -1,0 +1,42 @@
+.social-footer
+    @extend %col-3
+    text-align: right
+
+.social-footer-icon
+    @extend %social-icon
+    fill: $icon-footer-clr
+    
+    &:hover
+        fill: $icon-footer-hv-clr
+
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .social-footer
+        @include mq-col(4)
+        text-align: center
+        
+    .social-footer-icon
+        margin: 0 7.5%
+  
+        
+//small
+@include respond-to($small)
+    .social-footer-icon
+        margin: 0 10% 0 0
+    
+
+//extra-small
+@include respond-to($extra-small)
+    .social-footer
+        @include mq-col(6)
+    
+            
+//mob
+@include respond-to($mob)
+    .social-footer
+        @include mq-col(12)
+    
+    .social-footer-icon
+        margin: 0 10%

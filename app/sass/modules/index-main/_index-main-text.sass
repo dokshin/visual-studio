@@ -1,0 +1,14 @@
+.index-main-text
+    margin-top: 15px
+    padding: 2px 2.5%
+    color: $index-main-text-clr
+    background: $index-main-text-bg
+    
+    
+//RESPOND-TO
+
+//extra-small
+@include respond-to($extra-small)
+    .index-main-text
+        @include mq-col(10)
+        margin-top: 20px

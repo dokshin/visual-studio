@@ -1,19 +1,24 @@
-+nav([{
-    name: 'WHAT WE DO',
-    href: 'index.html'
-}, {
-    name: 'OUR WORK',
-    href: 'our-work.html'
-}, {
-    name: 'CLIENTS',
-    href: 'clients.html'
-}, {
-    name: 'TEAM',
-    href: 'team.html'
-}, {
-    name: 'OFFICES',
-    href: 'offices.html'
-}, {
-    name: 'EXPERIMANTES',
-    href: 'experimantes.html'
-}])
+nav.navbar
+    .navbar-item-mob
+        +icon('burger', 'nav-icon')
+        p.nav-icon-text= "MENU"
+
+    +nav([{
+        name: 'WHAT WE DO',
+        href: 'index.html'
+    }, {
+        name: 'OUR WORK',
+        href: 'our-work.html'
+    }, {
+        name: 'CLIENTS',
+        href: 'clients.html'
+    }, {
+        name: 'TEAM',
+        href: 'team.html'
+    }, {
+        name: 'OFFICES',
+        href: 'offices.html'
+    }, {
+        name: 'EXPERIMANTES',
+        href: 'experimantes.html'
+    }])

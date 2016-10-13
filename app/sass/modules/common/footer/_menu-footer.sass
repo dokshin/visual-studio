@@ -1,9 +1,15 @@
 .menu-footer
-    position: static
+    @extend %menu-icon 
     display: none
+    text-align: center
 
 .menu-footer-item
+    @extend %menu-icon-item
     margin: 10px 5px 20px 0
+    text-align: center
+    
+.menu-footer-img
+    @extend %menu-icon-img
     
     
 //RESPOND-TO
@@ -17,7 +23,7 @@
     .menu-footer-item
         @include mq-col(5)
         display: inline-block
-        margin: 5px 5px 5px 0
+        margin: 5px
         padding: 5% 0
         
 

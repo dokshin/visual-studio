@@ -41,17 +41,17 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Configs
 ------------------------------------------------*/
-.social-footer, .logo-header, .navbar-item-mob, .office-item, .navbar {
+.logo-site-header, .social-footer, .navbar-item-mob, .offices-item, .navbar {
   margin-right: 0.52083%;
   margin-left: 0.52083%; }
 
-.social-footer, .logo-header, .navbar-item-mob, .office-item, .navbar {
+.logo-site-header, .social-footer, .navbar-item-mob, .offices-item, .navbar {
   padding-right: 0;
   padding-left: 0; }
 
 /* Row
 ------------------------------------------------*/
-.wrapper, .offices-main {
+.wrapper-site-header, .wrapper-footer, .offices-main {
   margin-left: 0;
   margin-right: 0;
   max-width: 1250px;
@@ -66,15 +66,11 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Columns
 ------------------------------------------------*/
-.social-footer {
-  width: 15.62501%;
-  box-sizing: border-box; }
-
-.logo-header {
+.logo-site-header, .social-footer {
   width: 23.95834%;
   box-sizing: border-box; }
 
-.navbar-item-mob, .office-item {
+.navbar-item-mob, .offices-item {
   width: 32.29167%;
   box-sizing: border-box; }
 
@@ -88,28 +84,32 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 ------------------------------------------------*/
 /* Flex Itens
 ------------------------------------------------*/
-.site-header {
-  width: 100%;
-  background: black; }
-
-.site-footer {
-  width: 100%;
-  background: black; }
-
-.wrapper {
+.wrapper-site-header, .wrapper-footer {
   margin: 0 auto; }
 
 @media only screen and (max-width: 1199px) {
-  .wrapper {
+  .wrapper-site-header, .wrapper-footer {
     max-width: 950px; } }
 
 @media only screen and (max-width: 991px) {
-  .wrapper {
+  .wrapper-site-header, .wrapper-footer {
     max-width: 750px; } }
 
 @media only screen and (max-width: 767px) {
-  .wrapper {
-    max-width: 700px; } }
+  .wrapper-site-header, .wrapper-footer {
+    max-width: 550px; } }
+
+@media only screen and (max-width: 479px) {
+  .wrapper-site-header, .wrapper-footer {
+    max-width: 400px; } }
+
+@media only screen and (max-width: 319px) {
+  .wrapper-site-header, .wrapper-footer {
+    max-width: 300px; } }
+
+.site-header {
+  width: 100%;
+  background: black; }
 
 .wrapper-site-header {
   justify-content: space-between;
@@ -122,10 +122,9 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
     align-items: center;
     padding: 2% 0; } }
 
-.offices-main {
-  max-width: 100%;
-  margin: auto;
-  background: url(../img/offices-bg.jpg); }
+.site-footer {
+  width: 100%;
+  background: black; }
 
 .wrapper-footer {
   justify-content: space-between;
@@ -149,8 +148,46 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .wrapper-footer {
     padding: 5% 0; } }
 
+.offices {
+  background: url(../img/offices-bg.jpg);
+  background-size: cover; }
+
+.offices-main {
+  max-width: 100%;
+  margin: auto;
+  background: url(../img/offices-bg.jpg); }
+
+.logo {
+  height: 30px; }
+
+.nav-icon {
+  width: 25px;
+  height: 25px; }
+
+.menu-main, .menu-footer {
+  z-index: 100; }
+
+.menu-main-item, .menu-footer-item {
+  padding: 15% 10%;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s ease-out; }
+  .menu-main-item:hover, .menu-footer-item:hover {
+    color: white;
+    background: #ed1616; }
+
+.menu-main-img, .menu-footer-img {
+  width: 25px;
+  height: 25px;
+  fill: #ffffff; }
+
+.social-footer-icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 5%; }
+
 @media only screen and (max-width: 767px) {
-  .logo-header {
+  .logo-site-header {
     width: 98.95834%;
     text-align: center; } }
 
@@ -174,13 +211,11 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .navbar-item-mob:hover .icon-nav {
     fill: red; }
 
-.icon-nav {
-  width: 25px;
-  height: 25px;
+.nav-icon {
   vertical-align: middle;
   fill: white; }
 
-.navicon-text {
+.nav-icon-text {
   display: inline-block;
   color: white; }
 
@@ -217,7 +252,7 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
     padding: 7.5% 2.5%; }
   .navbar-item-mob {
     width: 48.95834%; }
-  .icon-nav {
+  .nav-icon {
     width: 30px;
     height: 30px; } }
 
@@ -226,30 +261,50 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
     width: 65.62501%; }
   .navbar-item {
     width: 100%; }
-  .icon-nav {
+  .nav-icon {
     height: 40px; } }
+
+.menu-main {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  text-align: center; }
+
+.menu-main-item {
+  margin-top: 2px; }
+
+@media only screen and (max-width: 991px) {
+  .menu-main {
+    display: none; } }
 
 .copyright {
   color: #7c7c7c; }
 
+@media only screen and (max-width: 991px) {
+  .copyright {
+    margin: 20px 0; } }
+
+@media only screen and (max-width: 319px) {
+  .copyright {
+    font-size: 0.9em; } }
+
 .social-footer {
   text-align: right; }
 
-.icon-footer {
-  width: 25px;
-  height: 25px;
-  margin-right: 7.5%;
+.social-footer-icon {
   fill: #7c7c7c; }
+  .social-footer-icon:hover {
+    fill: white; }
 
 @media only screen and (max-width: 991px) {
-  .copyright {
-    margin: 20px 0; }
   .social-footer {
     width: 32.29167%;
-    text-align: center; } }
+    text-align: center; }
+  .social-footer-icon {
+    margin: 0 7.5%; } }
 
 @media only screen and (max-width: 767px) {
-  .icon-footer {
+  .social-footer-icon {
     margin: 0 10% 0 0; } }
 
 @media only screen and (max-width: 479px) {
@@ -257,19 +312,18 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
     width: 48.95834%; } }
 
 @media only screen and (max-width: 319px) {
-  .copyright {
-    font-size: 0.9em; }
   .social-footer {
     width: 98.95834%; }
-  .icon-footer {
+  .social-footer-icon {
     margin: 0 10%; } }
 
 .menu-footer {
-  position: static;
-  display: none; }
+  display: none;
+  text-align: center; }
 
 .menu-footer-item {
-  margin: 10px 5px 20px 0; }
+  margin: 10px 5px 20px 0;
+  text-align: center; }
 
 @media only screen and (max-width: 991px) {
   .menu-footer {
@@ -278,7 +332,7 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .menu-footer-item {
     width: 40.62501%;
     display: inline-block;
-    margin: 5px 5px 5px 0;
+    margin: 5px;
     padding: 5% 0; } }
 
 @media only screen and (max-width: 767px) {
@@ -291,58 +345,22 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   .menu-footer-item {
     width: 48.95834%; } }
 
-.logo {
-  height: 30px; }
-
-.burger {
-  width: 25px;
-  height: 25px; }
-
-.menu-main {
-  position: absolute;
-  top: 25%;
-  right: 0;
-  text-align: center;
-  z-index: 100; }
-
-.menu-main-item {
-  margin-top: 2px;
-  padding: 15% 10%;
-  background: white;
-  cursor: pointer;
-  transition: 0.3s ease-out; }
-  .menu-main-item:hover {
-    color: white;
-    background: #ed1616; }
-
-.menu-main-img {
-  width: 25px;
-  height: 25px; }
-
-.menu-main-img {
-  fill: #ffffff; }
-
-@media only screen and (max-width: 991px) {
-  .menu-main {
-    display: none; } }
-
-.office-item {
+.offices-item {
   flex-grow: 1;
   position: relative;
   margin: 0;
   padding: 0;
   border: 1px solid white;
   cursor: pointer; }
-  .office-item:hover .office-text {
+  .offices-item:hover .offices-text {
     background: #da2c1d; }
 
-.office-img {
-  width: 100%;
-  height: 101%; }
+.offices-img {
+  height: 100%; }
 
-.office-text {
+.offices-text {
   position: absolute;
-  bottom: -1%;
+  bottom: 0;
   width: 100%;
   padding: 2.5% 0;
   font-size: 2em;
@@ -353,18 +371,18 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   transition: 0.5s all; }
 
 @media only screen and (max-width: 991px) {
-  .office-item {
+  .offices-item {
     width: 48.95834%; }
-  .office-img {
+  .offices-img {
     height: 100%; } }
 
 @media only screen and (max-width: 767px) {
-  .office-item {
+  .offices-item {
     width: 65.62501%;
     border: none; } }
 
 @media only screen and (max-width: 479px) {
-  .office-text {
+  .offices-text {
     font-size: 1.5em; } }
 
 .visible {

@@ -1,0 +1,25 @@
+extends ../layouts/_default
+
+block vars
+    -  
+        var lang =     'ru',
+            title =    'Clients',
+            style =    'css/clients.css',
+            bodyName = 'clients'
+
+block append link
+    // build:css css/clients.css 
+    link(rel="stylesheet" href=style)
+    // endbuild 
+    
+block header
+    include ../partials/_header
+    
+block main
+    include ../blocks/clients-main/_clients-main
+  
+block footer
+    include ../partials/_footer
+    
+block append script
+    // endbuild

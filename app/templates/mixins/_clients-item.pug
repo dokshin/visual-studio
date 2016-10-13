@@ -1,0 +1,17 @@
+mixin clients-item(items)
+    each item, i in items
+        .clients-item
+                .clients-hover
+                    h2.clients-hover-title.
+                        BRIDGE CONCEPT
+                        
+                    p.clients-hover-text.
+                        dolore magnam aliquam quaerat voluptatem
+                        
+                    +icon('add', 'clients-hover-add')
+
+                img.clients-foto(alt="client" src=item.link)
+                div(class="clients-info" + ' ' + item.mod)
+                    h2.clients-info-title=item.title
+                    p.clients-info-profession=item.text
+                    +social('clients')

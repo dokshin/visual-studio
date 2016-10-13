@@ -4,14 +4,22 @@ block vars
     -  
         var lang =   'ru',
             title =  'Visual Studio - Offices',
-            style =  'css/offices.css'
+            style =  'css/offices.css',
+            bodyName = 'offices'
+
+block append link
+    // build:css css/offices.css 
+    link(rel="stylesheet" href=style)
+    // endbuild 
     
 block header
     include ../partials/_header
     
 block main
-    include ../blocks/common/_menu-main
     include ../blocks/offices-main/_offices-main
   
 block footer
     include ../partials/_footer
+    
+block append script
+    // endbuild

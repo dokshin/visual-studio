@@ -1,21 +1,14 @@
-.logo-header
+.logo-site-header
     @extend %col-3
+    
+.logo
+    @extend %logo
     
 
 //RESPOND-TO
 
 //small
 @include respond-to($small)
-    .logo-header
+    .logo-site-header
         @include mq-col(12)
         text-align: center
-
-
-//extra-small
-@include respond-to($extra-small)
-    
-    
-
-//mob
-@include respond-to($mob)
-
