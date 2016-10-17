@@ -1,0 +1,25 @@
+extends ../layouts/_default
+
+block vars
+    -  
+        var lang =     'ru',
+            title =    'Visual Studio - Work',
+            style =    'css/work.css'
+            bodyName = 'work'
+            
+block append link
+    // build:css css/.css 
+    link(rel="stylesheet" href=style)
+    // endbuild 
+    
+block header
+    include ../partials/_header
+    
+block main
+    include ../blocks/work-main/_work-main
+  
+block footer
+    include ../partials/_footer
+    
+block append script
+    // endbuild

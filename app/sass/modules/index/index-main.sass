@@ -1,3 +1,7 @@
+.index-main-title
+    font-size: $index-main-title-sz
+    font-weight: normal
+    
 .index-main-text
     margin-top: 15px
     padding: 2px 2.5%
@@ -6,6 +10,12 @@
     
     
 //RESPOND-TO
+
+//large
+@include respond-to($large)
+    .index-main-title
+        font-size: $index-main-title-sz
+
 
 //extra-small
 @include respond-to($extra-small)

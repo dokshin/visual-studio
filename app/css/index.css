@@ -78,15 +78,15 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   font-size: 3.5em;
   font-weight: normal; }
 
-@media only screen and (max-width: 1199px) {
-  .index-main-title {
-    font-size: 3.5em; } }
-
 .index-main-text {
   margin-top: 15px;
   padding: 2px 2.5%;
   color: white;
   background: #1d2e34; }
+
+@media only screen and (max-width: 1199px) {
+  .index-main-title {
+    font-size: 3.5em; } }
 
 @media only screen and (max-width: 479px) {
   .index-main-text {

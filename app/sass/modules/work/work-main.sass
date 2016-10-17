@@ -1,0 +1,75 @@
+.work-item
+    @extend %col-3
+    position: relative
+    flex-grow: 1
+    margin: 0
+    cursor: pointer
+    
+.work-item-hv
+    position: absolute
+    height: 90%
+    width: 85%
+    padding: 10% 7.5%
+    text-align: center
+    background: $work-item-hv-bg
+    opacity: 0
+    
+    &:hover
+        opacity: 0.8
+    
+.work-title-hv
+    color: $work-title-hv
+    
+.work-text-hv
+    margin: 5% 0
+    color: $work-text-hv
+    
+.work-add
+    width: 40px
+    height: 40px
+    
+.work-img
+    height: 100%
+    
+    
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .work-item
+        @include mq-col(6)
+        
+    .work-item-hv
+        width: 100%
+        padding: 10% 0
+ 
+//small
+@include respond-to($small)
+    .work-item
+        @include mq-col(10)
+            
+    .work-item-hv
+        padding: 5% 0 7.5% 0
+        height: 25%
+        width: 50%
+        opacity: 0.6
+        
+        &:hover
+            opacity: 0.6
+        
+    .work-text-hv
+        margin: 1% 0
+    
+
+//extra-small
+@include respond-to($extra-small)
+    .work-item-hv
+        bottom: 25%
+        width: 100%
+        background: none
+    
+
+//mob
+@include respond-to($mob)
+    .work-item-hv
+        bottom: 35%

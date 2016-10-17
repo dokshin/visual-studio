@@ -1,0 +1,11 @@
+mixin work-item(items)
+    each item, i in items
+        .work-item
+            .work-item-hv
+                h2.work-title-hv.
+                    Sunglass factory
+                p.work-text-hv.
+                    dolore magnam aliquam quaerat voluptatem
+                +icon('add', 'work-add')
+                
+            img.work-img(alt="work" src=item.link)
