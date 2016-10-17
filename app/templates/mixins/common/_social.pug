@@ -1,5 +1,4 @@
-mixin social(name)
+mixin social(items, name)
     div(class= 'social-' + name)
-        a(class='social-' + name + '-link' href="#"): +icon('twitter', 'social-' + name + '-icon')
-        a(class='social-' + name + '-link' href="#"): +icon('fb', 'social-' + name + '-icon')
-        a(class='social-' + name + '-link' href="#"): +icon('skype', 'social-' + name + '-icon')
+        each item, i in items
+            a(class='social-' + name + '-link' href="#"): +icon(item.iconName, 'social-' + name + '-icon')

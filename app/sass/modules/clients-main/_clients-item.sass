@@ -27,13 +27,15 @@
     margin: 15px 0
     
 .social-clients-icon
-    width: 25px
-    height: 25px
+    width: 30px
+    height: 30px
     margin: 0 5%
     fill: $social-clients-icon-clr
+    border-radius: 100%
+    transition: 0.5s all
     
     &:hover
-        fill: $social-clients-icon-hv-clr
+        background: $social-clients-icon-hv-clr
     
     
 //RESPOND-TO
@@ -44,6 +46,10 @@
         @include mq-col(12)
         display: flex
         flex-direction: column
+        
+    .social-clients-icon
+        width: 35px
+        height: 35px
      
 
 //extra-small
@@ -52,10 +58,6 @@
         position: static
         width: 100%
         padding: 0 0
-        
-    .social-clients-icon
-        width: 30px
-        height: 30px
     
 
 //mob

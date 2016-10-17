@@ -1,0 +1,26 @@
+extends ../layouts/_default
+
+block vars
+    -  
+        var lang =     'ru',
+            title =    'Visual Studio - Team',
+            style =    'css/team.css'
+            bodyName = 'team'
+            
+block append link
+    // build:css css/team.css 
+    link(rel="stylesheet" href=style)
+    // endbuild 
+    
+block header
+    include ../partials/_header
+    
+block append main
+    include ../blocks/team-main/_team-main
+    
+block footer
+    include ../partials/_footer
+    
+block append script
+    script(src='js/sprite.js' async)
+    // endbuild

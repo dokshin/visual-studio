@@ -1,0 +1,12 @@
+mixin team-item(items)
+    each item, i in items
+        .team-item
+            .team-info
+                h2.team-title=item.title
+                p.team-text=item.text
+                
+            .team-line-box   
+                .team-line
+                +icon('triangle', 'team-triangle')
+                
+            img.team-foto(alt="team-foto" src=item.link)

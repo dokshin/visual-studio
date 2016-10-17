@@ -1,0 +1,74 @@
+.team-item
+    @extend %col-3
+    margin: 0
+    text-align: center
+    
+    &:hover .team-info
+        background: $team-info-bg
+        box-shadow: 4px 4px 5px $team-info-shadow-clr
+        
+    &:hover .team-foto
+        opacity: 1
+        
+    &:hover .team-line-box
+        margin: -5.1% 0 5% 0
+              
+    &:hover .team-triangle
+        opacity: 1
+
+.team-info
+    padding: 5%
+    border: 1px solid transparent
+    transition: 0.3s ease-out
+    
+.team-title
+    font-weight: normal
+    color: $team-title
+    
+.team-line
+    width: 15%
+    height: 2.5px
+    margin: 5% auto -6px auto
+    background: $team-line-clr
+    
+.team-foto
+    opacity: 0.8
+    cursor: pointer
+        
+.team-triangle
+    width: 10px
+    height: 15px
+    opacity: 0
+    
+
+//RESPOND-TO
+
+//medium
+@include respond-to($medium)
+    .team-item
+        @include mq-col(6)
+        margin-top: 50px
+    
+    .team-info
+        width: 50%
+        margin: 0 auto
+        
+    .team-line-box
+        margin: -5.1% 0 5% 0
+        
+    .team-line
+        margin: 5% auto -6px auto
+            
+    .team-foto
+        width: 60%
+   
+ 
+//small
+@include respond-to($small)
+    .team-item
+        @include mq-col(12)
+            
+    .team-info
+        background: $team-info-bg 
+        box-shadow: 4px 4px 5px $team-info-shadow-clr
+    

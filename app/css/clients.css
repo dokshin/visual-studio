@@ -1,29 +1,3 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed';
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto Condensed", sans-serif; }
-
-html,
-body {
-  height: 100%; }
-
-body {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-between; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-img {
-  width: 100%; }
-
-button {
-  background: none;
-  border: none; }
-
 /*
 Flex Grid Framework
 Platform: Sass (.scss)
@@ -41,17 +15,17 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Configs
 ------------------------------------------------*/
-.logo-site-header, .social-footer, .navbar-item-mob, .clients-item, .navbar {
+.clients-item {
   margin-right: 0.52083%;
   margin-left: 0.52083%; }
 
-.logo-site-header, .social-footer, .navbar-item-mob, .clients-item, .navbar {
+.clients-item {
   padding-right: 0;
   padding-left: 0; }
 
 /* Row
 ------------------------------------------------*/
-.wrapper-site-header, .wrapper-footer, .clients-main {
+.clients-main {
   margin-left: 0;
   margin-right: 0;
   max-width: 1250px;
@@ -66,16 +40,8 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Columns
 ------------------------------------------------*/
-.logo-site-header, .social-footer {
-  width: 23.95834%;
-  box-sizing: border-box; }
-
-.navbar-item-mob, .clients-item {
+.clients-item {
   width: 32.29167%;
-  box-sizing: border-box; }
-
-.navbar {
-  width: 65.62501%;
   box-sizing: border-box; }
 
 /* Offset
@@ -84,261 +50,11 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 ------------------------------------------------*/
 /* Flex Itens
 ------------------------------------------------*/
-.wrapper-site-header, .wrapper-footer {
-  margin: 0 auto; }
-
-@media only screen and (max-width: 1199px) {
-  .wrapper-site-header, .wrapper-footer {
-    max-width: 950px; } }
-
-@media only screen and (max-width: 991px) {
-  .wrapper-site-header, .wrapper-footer {
-    max-width: 750px; } }
-
-@media only screen and (max-width: 767px) {
-  .wrapper-site-header, .wrapper-footer {
-    max-width: 550px; } }
-
-@media only screen and (max-width: 479px) {
-  .wrapper-site-header, .wrapper-footer {
-    max-width: 400px; } }
-
-@media only screen and (max-width: 319px) {
-  .wrapper-site-header, .wrapper-footer {
-    max-width: 300px; } }
-
-.site-header {
-  width: 100%;
+.clients {
   background: black; }
-
-.wrapper-site-header {
-  justify-content: space-between;
-  align-items: center; }
-
-@media only screen and (max-width: 767px) {
-  .wrapper-site-header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2% 0; } }
-
-.site-footer {
-  width: 100%;
-  background: black; }
-
-.wrapper-footer {
-  justify-content: space-between;
-  padding: 1% 0; }
-
-@media only screen and (max-width: 991px) {
-  .wrapper-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5% 0 1% 0; } }
-
-@media only screen and (max-width: 767px) {
-  .wrapper-footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5% 0; } }
-
-@media only screen and (max-width: 479px) {
-  .wrapper-footer {
-    padding: 5% 0; } }
 
 .clients-main {
-  max-width: 100%;
-  margin: auto; }
-
-.logo {
-  height: 30px; }
-
-.nav-icon {
-  width: 25px;
-  height: 25px; }
-
-.menu-main, .menu-footer {
-  z-index: 100; }
-
-.menu-main-item, .menu-footer-item {
-  padding: 15% 10%;
-  background: white;
-  cursor: pointer;
-  transition: 0.3s ease-out; }
-  .menu-main-item:hover, .menu-footer-item:hover {
-    color: white;
-    background: #ed1616; }
-
-.menu-main-img, .menu-footer-img {
-  width: 25px;
-  height: 25px;
-  fill: #ffffff; }
-
-.social-footer-icon {
-  width: 25px;
-  height: 25px;
-  margin: 0 5%; }
-
-@media only screen and (max-width: 767px) {
-  .logo-site-header {
-    width: 98.95834%;
-    text-align: center; } }
-
-.navbar {
-  z-index: 100; }
-  .navbar-item {
-    display: inline-block;
-    margin-bottom: -3px;
-    padding: 4%;
-    color: #b8b8b8;
-    border-bottom: 3px solid transparent; }
-    .navbar-item:hover {
-      color: white;
-      background: #0c0c0c;
-      border-bottom: 3px solid #ed1616; }
-
-.navbar-item-mob {
-  display: none;
-  padding: 2.5% 0;
-  cursor: pointer; }
-  .navbar-item-mob:hover .icon-nav {
-    fill: red; }
-
-.nav-icon {
-  vertical-align: middle;
-  fill: white; }
-
-.nav-icon-text {
-  display: inline-block;
-  color: white; }
-
-@media only screen and (max-width: 1199px) {
-  .navbar {
-    width: 57.29167%;
-    margin-left: 8.85416%; }
-  .navbar-item {
-    padding: 5% 2%; } }
-
-@media only screen and (max-width: 991px) {
-  .navbar {
-    width: 48.95834%;
-    margin-left: 0.52083%; }
-  .navbar-item {
-    width: 25%;
-    margin: 0.5%;
-    padding: 5% 2.5%;
-    text-align: center; } }
-
-@media only screen and (max-width: 767px) {
-  .navbar {
-    text-align: center; }
-  .navbar-item {
-    display: none;
-    width: 95%;
-    color: white;
-    border-bottom: 3px solid #ed1616; }
-  .navbar-item-mob {
-    display: inline-block; } }
-
-@media only screen and (max-width: 479px) {
-  .navbar-item {
-    padding: 7.5% 2.5%; }
-  .navbar-item-mob {
-    width: 48.95834%; }
-  .nav-icon {
-    width: 30px;
-    height: 30px; } }
-
-@media only screen and (max-width: 319px) {
-  .navbar {
-    width: 65.62501%; }
-  .navbar-item {
-    width: 100%; }
-  .nav-icon {
-    height: 40px; } }
-
-.menu-main {
-  position: absolute;
-  top: 25%;
-  right: 0;
-  text-align: center; }
-
-.menu-main-item {
-  margin-top: 2px; }
-
-@media only screen and (max-width: 991px) {
-  .menu-main {
-    display: none; } }
-
-.copyright {
-  color: #7c7c7c; }
-
-@media only screen and (max-width: 991px) {
-  .copyright {
-    margin: 20px 0; } }
-
-@media only screen and (max-width: 319px) {
-  .copyright {
-    font-size: 0.9em; } }
-
-.social-footer {
-  text-align: right; }
-
-.social-footer-icon {
-  fill: #7c7c7c; }
-  .social-footer-icon:hover {
-    fill: white; }
-
-@media only screen and (max-width: 991px) {
-  .social-footer {
-    width: 32.29167%;
-    text-align: center; }
-  .social-footer-icon {
-    margin: 0 7.5%; } }
-
-@media only screen and (max-width: 767px) {
-  .social-footer-icon {
-    margin: 0 10% 0 0; } }
-
-@media only screen and (max-width: 479px) {
-  .social-footer {
-    width: 48.95834%; } }
-
-@media only screen and (max-width: 319px) {
-  .social-footer {
-    width: 98.95834%; }
-  .social-footer-icon {
-    margin: 0 10%; } }
-
-.menu-footer {
-  display: none;
-  text-align: center; }
-
-.menu-footer-item {
-  margin: 10px 5px 20px 0;
-  text-align: center; }
-
-@media only screen and (max-width: 991px) {
-  .menu-footer {
-    width: 32.29167%;
-    display: block; }
-  .menu-footer-item {
-    width: 40.62501%;
-    display: inline-block;
-    margin: 5px;
-    padding: 5% 0; } }
-
-@media only screen and (max-width: 767px) {
-  .menu-footer {
-    width: 48.95834%; } }
-
-@media only screen and (max-width: 479px) {
-  .menu-footer {
-    width: 82.29167%; }
-  .menu-footer-item {
-    width: 48.95834%; } }
+  max-width: 100%; }
 
 .clients-item {
   flex-grow: 1;
@@ -368,34 +84,30 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
   margin: 15px 0; }
 
 .social-clients-icon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin: 0 5%;
-  fill: #8a8a8a; }
+  fill: #8a8a8a;
+  border-radius: 100%;
+  transition: 0.5s all; }
   .social-clients-icon:hover {
-    fill: #ed1616; }
+    background: #ed1616; }
 
 @media only screen and (max-width: 991px) {
   .clients-item {
     width: 98.95834%;
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .social-clients-icon {
+    width: 35px;
+    height: 35px; } }
 
 @media only screen and (max-width: 479px) {
   .clients-info {
     position: static;
     width: 100%;
-    padding: 0 0; }
-  .social-clients-icon {
-    width: 30px;
-    height: 30px; } }
+    padding: 0 0; } }
 
 @media only screen and (max-width: 319px) {
   .clients-info-profession {
     margin: 20px 0; } }
-
-.clients-hover {
-  display: none; }
-
-.visible {
-  display: block; }
