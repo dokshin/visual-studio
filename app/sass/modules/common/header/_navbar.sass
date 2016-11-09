@@ -14,14 +14,14 @@
             background: $navbar-item-clr
             border-bottom: 3px solid $navbar-border-clr
 
-.navbar-item-mob
-    display: none
-    @extend %col-4
-    padding: 2.5% 0
-    cursor: pointer
-    
-    &:hover .nav-icon
-        fill: $icon-nav-hv
+    &-item-mob
+        display: none
+        @extend %col-4
+        padding: 2.5% 0
+        cursor: pointer
+
+        &:hover .nav-icon
+            fill: $icon-nav-hv
         
 .nav-icon
     @extend %burger
@@ -29,9 +29,9 @@
     fill: $icon-nav-default
     transition: 0.4s all
     
-.nav-icon-text
-    display: inline-block
-    color: white
+    &-text
+        display: inline-block
+        color: white
     
         
 //RESPOND-TO
